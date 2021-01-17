@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ファン同士の交流を応援">
+    <meta name="viewport" content="width=device-width">
     <title>KCommunity</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,7 +12,9 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body id="top">
+    <div login_user>
+    <div>
     <%= yield %>
   </body>
 </html>
